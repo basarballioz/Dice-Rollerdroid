@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".TwoDiceActivity">
+
+    <TextView
+        android:id="@+id/dice2Result"
+        android:layout_width="157dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="-"
+        android:textColor="@color/colorWhite"
+        android:textSize="120sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="152dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/audiowide"
+        android:onClick="rollDice"
+        android:text="ROLL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dice1View"
+        android:layout_width="195dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toTopOf="@+id/diceStatus"
+        app:layout_constraintEnd_toStartOf="@+id/dice2View"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        app:srcCompat="@drawable/dice1" />
+
+    <TextView
+        android:id="@+id/diceStatus"
+        android:layout_width="380dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="132dp"
+        android:gravity="center_horizontal"
+        android:text="Press Roll!"
+        android:textColor="@color/colorWhite"
+        android:textSize="42sp"
+        app:fontFamily="@font/audiowide"
+        app:layout_constraintBottom_toTopOf="@+id/rollButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/dice2View"
+        android:layout_width="195dp"
+        android:layout_height="171dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/diceStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        app:srcCompat="@drawable/dice1" />
+
+    <TextView
+        android:id="@+id/dice1Result"
+        android:layout_width="157dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="-"
+        android:textColor="@color/colorWhite"
+        android:textSize="120sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

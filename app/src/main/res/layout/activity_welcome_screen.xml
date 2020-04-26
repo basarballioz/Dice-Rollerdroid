@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".WelcomeScreen">
+
+    <ImageView
+        android:id="@+id/welcomeDiceView"
+        android:layout_width="226dp"
+        android:layout_height="234dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/diceimage" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="386dp"
+        android:layout_height="74dp"
+        android:gravity="center_horizontal"
+        android:text="WELCOME TO DICE ROLLERDROID"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/audiowide"
+        app:layout_constraintBottom_toTopOf="@+id/oneDiceRoller"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <Button
+        android:id="@+id/oneDiceRoller"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/audiowide"
+        android:onClick="rollOneDice"
+        android:text="ROLL 1 DICE"
+        app:layout_constraintBottom_toTopOf="@+id/twoDiceRoller"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/twoDiceRoller"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="128dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/audiowide"
+        android:onClick="rollTwoDice"
+        android:text="ROLL 2 DICE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/gitHubButton"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorGitHub"
+        android:onClick="openGitHub"
+        android:text="VISIT GITHUB"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:fontFamily="@font/audiowide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoDiceRoller"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

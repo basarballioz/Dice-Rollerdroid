@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/audiowide</item>
+        <item>@font/delius_swash_caps</item>
+        <item>@font/monofett</item>
+        <item>@font/zeyada</item>
+    </array>
+</resources>
